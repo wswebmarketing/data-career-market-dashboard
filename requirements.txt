@@ -1,4 +1,5 @@
+streamlit>=1.19,<1.30
+altair>=4.2,<5
 Pandas
-Streamlit
 Matplotlib
 Plotly
