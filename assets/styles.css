@@ -1,0 +1,16 @@
+.sidebar {
+    background-color: black;
+    height: 100%;
+}
+
+.graphs {
+    background-color: gray;
+}
+
+.card h3 {
+    font-size: 1.8rem;
+}
+
+.card span {
+    font-size: 1.5rem;
+}
