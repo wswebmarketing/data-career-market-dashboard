@@ -8,9 +8,16 @@
 }
 
 .card h3 {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .card span {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner.dash-fill-width .cell table {
+    width: 100%;
+    font-family: inherit;
 }

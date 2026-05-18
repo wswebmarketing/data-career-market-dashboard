@@ -75,7 +75,7 @@ company_place_options = [
 ]
 
 #Cálculo da média salarial
-print(f"{list(df.columns)}\n")
+#print(f"{list(df.columns)}\n")
 #avg_salaries = df["salario_usd"].mean().round(2)
 
 #Cálculo da mediana salarial
@@ -106,11 +106,11 @@ layout = html.Div(
             [
                 dbc.Col(
                     html.Div(
-                        className = "sidebar p-5",
+                        className = "sidebar p-2 p-md-3 p-lg-5 container",
                         children = [
                             html.H2(
                                 "Ano", 
-                                className = "text-center text-white"
+                                className = "text-center text-white fs-5 fw-bold"
                             ),
                             dbc.Checklist(
                                 id = "select_years",
@@ -121,7 +121,7 @@ layout = html.Div(
                             ),
                             html.H2(
                                 "Nível de Experiência", 
-                                className = "text-center text-white mt-5"
+                                className = "text-center text-white mt-5 fs-5 fw-bold"
                             ),
                             dbc.Select(
                                 id = "select_level_experience",
@@ -131,7 +131,7 @@ layout = html.Div(
                             ),
                             html.H2(
                                 "Cargo",
-                                className = "text-center text-white mt-5"
+                                className = "text-center text-white mt-5 fs-5 fw-bold"
                             ),
                             dbc.Select(
                                 id = "select_position",
@@ -141,7 +141,7 @@ layout = html.Div(
                             ),
                             html.H2(
                                 "Tipo de Contratação",
-                                className = "text-center text-white mt-5"
+                                className = "text-center text-white mt-5 fs-5 fw-bold"
                             ),
                             dbc.Checklist(
                                 id = "select_type_contract",
@@ -151,7 +151,7 @@ layout = html.Div(
                             ),
                             html.H2(
                                 "Tipo de trabalho",
-                                className = "text-center text-white mt-5"
+                                className = "text-center text-white mt-5 fs-5 fw-bold"
                             ),
                             dbc.Select(
                                 id = "select_type_work",
@@ -161,7 +161,7 @@ layout = html.Div(
                             ),
                             html.H2(
                                 "Porte da Empresa",
-                                className = "text-center text-white mt-5"
+                                className = "text-center text-white mt-5 fs-5 fw-bold"
                             ),
                             dbc.Checklist(
                                 id = "select_type_company",
@@ -172,7 +172,7 @@ layout = html.Div(
                             ),
                             html.H2(
                                 "Residência do Empregado",
-                                className = "text-center text-white mt-5"
+                                className = "text-center text-white mt-5 fs-5 fw-bold"
                             ),
                             dbc.Select(
                                 id = "select_residence_employee",
@@ -182,7 +182,7 @@ layout = html.Div(
                             ),
                             html.H2(
                                 "Local da Empresa",
-                                className = "text-center text-white mt-5"
+                                className = "text-center text-white mt-5 fs-5 fw-bold"
                             ),
                             dbc.Select(
                                 id = "select_company_place",
@@ -192,17 +192,17 @@ layout = html.Div(
                             )
                         ]
                     ),
-                    width = 3,
+                    xs = 5, sm = 5, md = 3, xl = 3, xxl = 3
                 ),
                 dbc.Col(
                     html.Div(
-                        className = "graphs p-5 container",
+                        className = "graphs p-2 p-md-3 p-lg-5",
                         children = [
                             dbc.Row(
-                                className = "m-3",
+                                className = "g-4",
                                 children = [
                                     dbc.Col(
-                                        width = 4,
+                                        xs = 12, sm = 12, md = 4, xl = 4, xxl = 4,
                                         children = [
                                             dbc.Card(
                                                 className = "text-center p-2",
@@ -219,7 +219,8 @@ layout = html.Div(
                                         ]
                                     ),
                                     dbc.Col(
-                                        width = 4,
+                                        xs = 12, sm = 12, md = 4, xl = 4, xxl = 4,
+                                        className = "g-4",
                                         children = [
                                             dbc.Card(
                                                 className = "text-center p-2",
@@ -236,7 +237,7 @@ layout = html.Div(
                                         ]
                                     ),
                                     dbc.Col(
-                                        width = 4,
+                                        xs = 12, sm = 12, md = 4, xl = 4, xxl = 4,
                                         children = [
                                             dbc.Card(
                                                 className = "text-center p-2",
@@ -255,10 +256,10 @@ layout = html.Div(
                                 ]
                             ),
                             dbc.Row(
-                                className = "m-3",
+                                className = "g-4 mt-4",
                                 children = [
                                     dbc.Col(
-                                        width = 4,
+                                        xs = 12, sm = 12, md = 4, xl = 4, xxl = 4,
                                         children = [
                                             dbc.Card(
                                                 className = "text-center p-2",
@@ -275,7 +276,7 @@ layout = html.Div(
                                         ]
                                     ),
                                     dbc.Col(
-                                        width = 4,
+                                        xs = 12, sm = 12, md = 4, xl = 4, xxl = 4,
                                         children = [
                                             dbc.Card(
                                                 className = "text-center p-2",
@@ -292,7 +293,7 @@ layout = html.Div(
                                         ]
                                     ),
                                     dbc.Col(
-                                        width = 4,
+                                        xs = 12, sm = 12, md = 4, xl = 4, xxl = 4,
                                         children = [
                                             dbc.Card(
                                                 className = "text-center p-2",
@@ -311,10 +312,10 @@ layout = html.Div(
                                 ]
                             ),
                             dbc.Row(
-                                className = "p-5",
+                                className = "g-4 mt-4",
                                 children = [
                                     dbc.Col(
-                                        width = 6,
+                                        xs = 12, sm = 12, md = 6, xl = 6, xxl = 6,
                                         children = [
                                             dbc.Card(
                                                 className = "text-center p-3",
@@ -324,13 +325,22 @@ layout = html.Div(
                                                     ),
                                                     dcc.Graph(
                                                         id = "graph_top_10_salaries_by_country",
+                                                        responsive = True,
+                                                        style = {
+                                                            "width": "100%",
+                                                            "height": "350px"
+                                                        },
+                                                        config = {
+                                                            "displayModeBar": False
+                                                        }
                                                     )
                                                 ]
                                             )
-                                        ]
+                                        ],
+                                        className = "mt-xs-4 mt-sm-4"
                                     ),
                                     dbc.Col(
-                                        width = 6,
+                                        xs = 12, sm = 12, md = 6, xl = 6, xxl = 6,
                                         children = [
                                             dbc.Card(
                                                 className = "text-center p-3",
@@ -353,7 +363,6 @@ layout = html.Div(
                                                         style_cell = {
                                                             "textAlign": "center",
                                                             "padding": "8px",
-                                                            "fontFamily": "inherit",
                                                             "fontSize": "14px"
                                                         },
                                                         style_header = {
@@ -364,21 +373,23 @@ layout = html.Div(
                                                         },
                                                         style_data = {
                                                             "backgroundColor": "white",
-                                                            "color": "black"
+                                                            "color": "black",
+                                                            "fontFamily": "inherit"
                                                         },
                                                         style_as_list_view = True
                                                     )
                                                 ]
                                             )
-                                        ]
+                                        ],
+                                        className = "mt-xs-4 mt-sm-4"
                                     )
                                 ]
                             ),
                             dbc.Row(
-                                className = "p-5",
+                                className = "g-4 mt-4",
                                 children = [
                                     dbc.Col(
-                                        width = 6,
+                                        xs = 12, sm = 12, md = 6, xl = 6, xxl = 6,
                                         children = [
                                             dbc.Card(
                                                 className = "text-center p-3",
@@ -388,13 +399,22 @@ layout = html.Div(
                                                     ),
                                                     dcc.Graph(
                                                         id = "graph_salaries_by_level_experience",
+                                                        responsive = True,
+                                                        style = {
+                                                            "width": "100%",
+                                                            "height": "350px"
+                                                        },
+                                                        config = {
+                                                            "displayModeBar": False
+                                                        }
                                                     )
                                                 ]
                                             )
-                                        ]
+                                        ],
+                                        className = "mt-xs-4 mt-sm-4"
                                     ),
                                     dbc.Col(
-                                        width = 6,
+                                        xs = 12, sm = 12, md = 6, xl = 6, xxl = 6,
                                         children = [
                                             dbc.Card(
                                                 className = "text-center p-3",
@@ -403,16 +423,25 @@ layout = html.Div(
                                                         "Média Salarial por Tipo de Contratação"
                                                     ),
                                                     dcc.Graph(
-                                                        id = "graph_salaries_by_type_contract"
+                                                        id = "graph_salaries_by_type_contract",
+                                                        responsive = True,
+                                                        style = {
+                                                            "width": "100%",
+                                                            "height": "350px"
+                                                        },
+                                                        config = {
+                                                            "displayModeBar": False
+                                                        }
                                                     )
                                                 ]
                                             )
-                                        ]
+                                        ],
+                                        className = "mt-xs-4 mt-sm-4"
                                     ),
                                 ]
                             ),
                             dbc.Row(
-                                className = "p-5",
+                                className = "g-4 mt-4",
                                 children = [
                                     dbc.Col(
                                         width = 12,
@@ -424,19 +453,28 @@ layout = html.Div(
                                                         "Média Salarial por Porte da Empresa"
                                                     ),
                                                     dcc.Graph(
-                                                        id = "graph_salaries_by_company_type"
+                                                        id = "graph_salaries_by_company_type",
+                                                        responsive = True,
+                                                        style = {
+                                                            "width": "100%",
+                                                            "height": "350px"
+                                                        },
+                                                        config = {
+                                                            "displayModeBar": False
+                                                        }
                                                     )
                                                 ]
                                             )
-                                        ]
+                                        ],
+                                        className = "mt-xs-4 mt-sm-4"
                                     )
                                 ]
                             ),
                             dbc.Row(
-                                className = "p-5",
+                                className = "g-4 mt-4",
                                 children = [
                                     dbc.Col(
-                                        width = 6,
+                                        xs = 12, sm = 12, md = 6, xl = 6, xxl = 6,
                                         children = [
                                             dbc.Card(
                                                 className = "text-center p-3",
@@ -445,14 +483,23 @@ layout = html.Div(
                                                         "Percentual de trabalhadores por tipo de contratação"
                                                     ),
                                                     dcc.Graph(
-                                                        id = "graph_percentual_workers_by_type_contract"
+                                                        id = "graph_percentual_workers_by_type_contract",
+                                                        responsive = True,
+                                                        style = {
+                                                            "width": "100%",
+                                                            "height": "350px"
+                                                        },
+                                                        config = {
+                                                            "displayModeBar": False
+                                                        }
                                                     )
                                                 ]
                                             )
-                                        ]
+                                        ],
+                                        className = "mt-xs-4 mt-sm-4"
                                     ),
                                     dbc.Col(
-                                        width = 6,
+                                        xs = 12, sm = 12, md = 6, xl = 6, xxl = 6,
                                         children = [
                                             dbc.Card(
                                                 className = "text-center p-3",
@@ -461,17 +508,26 @@ layout = html.Div(
                                                         "Evolução Salarial Anual"
                                                     ),
                                                     dcc.Graph(
-                                                        id = "graph_evolution_salaries_by_year"
+                                                        id = "graph_evolution_salaries_by_year",
+                                                        responsive = True,
+                                                        style = {
+                                                            "width": "100%",
+                                                            "height": "350px"
+                                                        },
+                                                        config = {
+                                                            "displayModeBar": False
+                                                        }
                                                     )
                                                 ]
                                             )
-                                        ]
+                                        ],
+                                        className = "mt-xs-4 mt-sm-4"
                                     )
                                 ]
                             )
                         ]
                     ),
-                    width = 9
+                    xs = 7, sm = 7, md = 9, xl = 9, xxl = 9
                 )
             ], 
             className = "g-0"
@@ -654,7 +710,6 @@ def update_kpis(
         df_top10_transformed_long,
         x = "residencia_empregado",
         y = "salary",
-        title = "Top 10 Países por Média Salarial (USD)",
         labels = {
             "residencia_empregado": "País",
             "salary": "Salário (USD)",
@@ -664,7 +719,13 @@ def update_kpis(
         color = "metric",
         template = "plotly"
     )
-    fig_top10.update_layout(xaxis_tickangle = -45)
+    fig_top10.update_layout(
+        xaxis_tickangle = -45, 
+        autosize = True, 
+        margin = dict(l = 10, r = 0, t = 40, b = 20),
+        font = dict(size = 10),
+        legend = dict(orientation = "h", y = 1.3)
+    )
 
     df_top10["average"] = round(df_top10["average"], 2)
     df_top10["median"] = round(df_top10["median"], 2)
@@ -713,6 +774,12 @@ def update_kpis(
     fig_experience.update_traces(
         textposition = "outside"
     )
+    fig_experience.update_layout(
+        autosize = True, 
+        margin = dict(l = 10, r = 0, t = 40, b = 20),
+        font = dict(size = 10),
+        legend = dict(orientation = "h", y = 1.3)  
+    )
 
     df_contract = (
         df_filtered
@@ -752,6 +819,12 @@ def update_kpis(
     fig_contract.update_traces(
         textposition = "outside"
     )
+    fig_contract.update_layout(
+        autosize = True, 
+        margin = dict(l = 10, r = 0, t = 40, b = 20),
+        font = dict(size = 10),
+        legend = dict(orientation = "h", y = 1.3)
+    )
 
     df_company_size = (
         df_filtered
@@ -783,12 +856,18 @@ def update_kpis(
         barmode = "group",
         labels = {
             "porte_empresa": "Porte da Empresa",
-            "average_salary": "Média Salarial (USD)",
+            "salary": "Média Salarial (USD)",
             "metric": "Métrica"
         },
         template = "plotly"
     )
     fig_company_size.update_traces(textposition = "outside")
+    fig_company_size.update_layout(
+        autosize = True, 
+        margin = dict(l = 10, r = 0, t = 40, b = 20),
+        font = dict(family = "inherit", size = 10),
+        legend = dict(orientation = "h", y = 1.3)
+    )
 
     df_remote = (
         df_filtered
@@ -810,6 +889,12 @@ def update_kpis(
         template = "plotly"
     )
     fig_remote.update_traces(textinfo = "percent+label")
+    fig_remote.update_layout(
+        autosize = True, 
+        margin = dict(l = 10, r = 0, t = 40, b = 20),
+        font = dict(size = 10),
+        legend = dict(orientation = "h", y = 1.3)
+    )
 
     df_evolution = (
         df_filtered
@@ -843,9 +928,15 @@ def update_kpis(
         template = "plotly",
         labels = {
             "ano_trabalho": "Ano",
-            "average_salary": "Média Salarial (USD)",
+            "salary": "Média Salarial (USD)",
             "metric": "Métrica"
         }
+    )
+    fig_evolution.update_layout(
+        autosize = True, 
+        margin = dict(l = 10, r = 0, t = 40, b = 20),
+        font = dict(size = 10),
+        legend = dict(orientation = "h", y = 1.3)
     )
 
     return(
