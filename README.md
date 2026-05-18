@@ -1,76 +1,231 @@
 # Data Career Market Dashboard
-### Growth-Oriented Market Intelligence Architecture
+## Growth-Oriented Market Intelligence Architecture
 
 Strategic analytical dashboard designed to interpret salary dynamics in the data industry through a decision-oriented perspective.
 
-This project goes beyond visualization.
-It represents a modular analytical architecture structured for Growth Architecture evolution and future Revenue Architecture expansion.
+This project combines data analysis, statistical modeling, and interactive visualization to generate actionable insights related to compensation, remote work, professional experience, and salary evolution in the data market.
 
 ---
 
 ## Resumo (Português)
 
-Este projeto é um modelo estratégico de análise do mercado de trabalho na área de dados, estruturado para geração de insights acionáveis para profissionais e tomadores de decisão na área de Reursos Humanos.
+Este projeto é uma solução analítica desenvolvida para investigar padrões salariais no mercado de dados.
 
-Ele integra estatística aplicada, visualização interativa e arquitetura modular orientada a crescimento.
+O dashboard foi estruturado para transformar dados de remuneração em insights acionáveis para profissionais, recrutadores e tomadores de decisão.
+
+A análise integra:
+
+- estatística aplicada;
+- visualização interativa;
+- análise exploratória;
+- arquitetura modular orientada à escalabilidade.
+
+---
+
+## Objetivo Estratégico
+
+O projeto busca responder perguntas relevantes relacionadas ao mercado de dados:
+
+- Como os salários evoluem conforme o nível de experiência?
+- Existe diferença significativa entre média e mediana salaria?
+- Quais países oferecem maiores salários médios?
+- Como o trabalho remoto influencia a remuneração?
+- O crescimento salarial se mantém consistente ao longo dos anos?
+
+O objetivo principal não é apenas visualização, mas geração de inteligência orientada à tomada de decisão.
+
+---
+
+## Principais Métricas
+
+O dashboard calcula e visualiza:
+
+- salário médio;
+- mediana salarial;
+- desvio padrão;
+- salário mínimo e máximo;
+- distribuição salarial por experiência;
+- evolução salarial anual;
+- distribuição por modelo de trabalho:
+  - remoto;
+  - híbrido;
+  - presencial
+ 
+A comparação entre média e mediana permite identificar possíveis distorções salariais e concentração de renda.
+
+---
+
+## Estrutura Analítica do Projeto
+
+O projeto foi organizado em camadas analíticas para melhorar:
+
+- organização;
+- escalabilidade;
+- manutenção;
+- evolução futura.
+
+---
+
+## Estrutura Analítica do Projeto
+
+O projeto foi organizado em camadas analíticas para melhorar:
+
+- organização;
+- escalabilidade;
+- manutenção;
+- evolução futura.
+
+### Estrutura
+
+- Data Layer -> carregamento e preparação dos dados;
+- Analytics Layer -> cálculo estatístico e geração de métricas;
+- Presentation Layer -> visualização com Dash e Plotly;
+- Interface Layer -> layout responsivo e componentes visuais.
+
+---
+
+## Arquitetura e Mentalidade Analítica
+
+Este projeto segue uma abordagem orientada a:
+
+- modularização;
+- separação de responsabilidades;
+- métricas orientadas à decisão;
+- visualização focada em UX;
+- estrutura analítica expansível.
+
+A arquitetura foi pensada para futura evolução em análises preditivas e inteligência orientada a crescimento.
+
+---
+
+## Tecnologias Utilizadas
+
+- Python;
+- Pandas;
+- Dash;
+- Plotly;
+- Bootstrap.
+
+---
+
+## Responsividade e Experiência de Uso
+
+O dashboard foi ajustado para diferentes resoluções e dispositivos, priorizando:
+
+- legibilidade;
+- organização visual;
+- distribuição responsiva dos gráficos;
+- experiência mobile;
+- clareza analítica.
+
+---
+
+## Roadmap de Evolução
+
+Próximas evoluções previstas:
+
+- modelagem preditiva salarial;
+- simulação de cenários;
+- segmentação geográfica avançada;
+- integração com APIs;
+- expansão da arquitetura analítica.
+
+---
+
+## Sobre a WS - Web Marketing
+
+A WS - Web Marketing atua na interseção entre marketing, dados e tecnologia (MarTech), desenvolvendo soluções analíticas orientadas a crescimento sustentável, inteligência de mercado e tomada de decisão baseada em dados.
+
+Este projeto representa um case de portfólio voltado para Marketing Analytics e Business Intelligence.
+
+---
+
+## Como Executar
+
+```bash
+pip install -r requirements.txt
+python app.py
+```
+
+---
+
+## Summary
+
+This project is a strategic analytical solution developed to investigate salary patterns in the data industry.
+
+The dashboard transforms compensation data into actionable insights for professionals, recruiters, and decision-makers.
+
+This analysis combines:
+
+- applied statistics;
+- interactive visualization;
+- exploratory analysis;
+- scalable modular architecture.
 
 ---
 
 ## Strategic Objective
 
-The dashboard was built to answer high-impact market question:
+The dashboard was designed to answer relevant market questions:
 
-1. How do salaries evolve by experience level?
-2. Is there distortion between mean and median compensation?
-3. Which countries offer higher average salaries?
-4. How does remote work influence compensation?
-5. Is salary growth consistent across years?
+- How do salaries evolve across experience levels?
+- Is there distortion between mean and median salaries?
+- Which countries offer higher average compensation?
+- How does remote work impact salaries?
+- Is salary growth consistent over time?
 
-The goal is not only data exploration, but acionable insight generation.
+The primary goal is not only visualization, but decision-oriented intelligence generation.
 
 ---
 
 ## Core Metrics
 
-The system calculates and visualizates:
+The system calculates and visualizes:
 
-- Mean Salary;
-- Median Salary;
-- Standard Deviation;
-- Maximum and Minimum salary;
-- Top 10 Countries by Average Salary;
-- Salary distribution by Experience Level;
-- Annual Salary Evolution;
-- Work Model Distribution (Remote, Hybrid, On-site).
-
-The comparison between mean and median enables identification of market distortions and income concentration.
-
----
-
-## Project Architecture
-
-The project is structured in analytical layers:
-
-- **Data Layer** -> Data loading and preprocessing;
-- **Analytics Layer** -> Statistical computation and metric generation;
-- **Presentation Layer** -> Dash + Plotly visual rendering;
-- **Interface Layer** -> Component-based structure and responsive layout.
-
-This layered architecture improves scalability, maintainability, and future integrations capabilities.
+- mean salary;
+- median salary;
+- standard deviation;
+- minimum and maximum salary;
+- top 10 countries by average salary;
+- annual salary evolution;
+- work model distribution:
+  - remote;
+  - hybrid;
+  - on-site
+ 
+The comparison between mean and median helps identify salary distortion and income concentration patterns.
 
 ---
 
-## Architectural Mindset
+## Analytical Architecture
 
-This repository reflects a Growth Architecure approach:
+The project was organized into analytical layers to improve:
 
-- Modular code structure;
-- Clear separation of responsibilities;
-- Decision-driven metrics;
-- UX-oriented visualization;
-- Expandable analytical framework.
+- maintainability;
+- scalability;
+- organization;
+- future expansion capabilities;
 
-Future evolution aims at Revenue Architecture integration through predictive modeling and scenario simulation.
+### Structure
+
+- Data Layer -> data loading and preprocessing;
+- Analytics Layer -> statistical computation and metric generation;
+- Presentation Layer -> Dash + Plotly visualization;
+- Interface Layer -> responsive layout and visual components.
+
+---
+
+## Analytical Mindset
+
+This repository follows an approach focused on:
+
+- modular architecture;
+- separation of responsibilities;
+- decision-oriented metrics;
+- UX-focused visualization;
+- scalable analytical structure.
+
+The architecture was designed for future predictive analytics and growth-oriented intelligence evolution.
 
 ---
 
@@ -84,22 +239,40 @@ Future evolution aims at Revenue Architecture integration through predictive mod
 
 ---
 
-## Future Evolution Roadmap
+## Responsiveness and User Experience
 
-- Predictive salary modeling;
-- Scenario-based compensation simulated;
-- Advanced geographic segmentation;
-- API integrations for real-time data;
-- Portfolio positioning analytics.
+The dashboard was optimized for different devices and resolutions, prioritizing:
+
+- readability;
+- visual organization;
+- responsive charts;
+- mobile experience;
+- analytical clarity.
+
+---
+
+## Future Roadmap
+
+Planned future improvements:
+
+- predictive salary modeling;
+- scenario simulation;
+- advanced geographic segmentation;
+- analytical architecture expansion.
+
+---
 
 ## About WS - Web Marketing
 
-WS - Web Marketing operates at the intersection of marketing, data, and technology (MarTech), building strategic analytical solutions designed to support sustainable growth and revenue generation.
+WS - Web Marketing operates at the intersection of marketing, data, and technology (MarTech), developing analytical solutions focused on sustainabile growth, market intelligence, and data-driven decision-making.
 
-This repository represents a consulting showcase project.
+This repository represents a portfolio showcase project focused on Marketing Analytics and Business Intelligence
+
+---
 
 ## How to Run
 
 ```bash
 pip install -r requirements.txt
-python app.py```
+python app.py
+```
