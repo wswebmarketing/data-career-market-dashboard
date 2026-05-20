@@ -5,7 +5,7 @@ import dash_bootstrap_components as dbc
 from services.data_loader import load_positions_and_salaries
 import plotly.express as px
 import numpy as np
-from tabulate import tabulate
+#from tabulate import tabulate
 
 try:
     df = load_positions_and_salaries()
