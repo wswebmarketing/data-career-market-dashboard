@@ -548,6 +548,8 @@ app = Dash(
     external_stylesheets = [BS]
 )
 
+server = app.server
+
 app.layout = html.Div([
     dash.page_container
 ])
