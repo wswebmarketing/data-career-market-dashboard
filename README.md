@@ -1,4 +1,11 @@
 # Data Career Market Dashboard
+
+## Live Demo
+
+Access the deployed analytical dashboard:
+
+[https://data-career-market-dashboard.onrender.com]
+
 ## Growth-Oriented Market Intelligence Architecture
 
 Strategic analytical dashboard designed to interpret salary dynamics in the data industry through a decision-oriented perspective.
@@ -117,6 +124,20 @@ O dashboard foi ajustado para diferentes resoluções e dispositivos, priorizand
 - distribuição responsiva dos gráficos;
 - experiência mobile;
 - clareza analítica.
+
+---
+
+## Deployment
+
+This dashboard is publicity deployed using Render.
+
+Production deployment includes:
+
+- responsive analytical interface;
+- cloud deployment architecture;
+- production dependency management;
+- scalable dashboard structure;
+- responsive visualization system.
 
 ---
 
