@@ -6,6 +6,10 @@ Access the deployed analytical dashboard:
 
 [https://data-career-market-dashboard.onrender.com]
 
+## Dashboard Preview
+
+<img src="assets/Captura de tela_21-5-2026_14924_data-career-market-dashboard.onrender.com.jpeg" style="width: 100%; max-width: 100%;" alt="Imagem relacionada ao dashboard de análise de dados relacionados a cargos e salários na área de dados"/>
+
 ## Growth-Oriented Market Intelligence Architecture
 
 Strategic analytical dashboard designed to interpret salary dynamics in the data industry through a decision-oriented perspective.
